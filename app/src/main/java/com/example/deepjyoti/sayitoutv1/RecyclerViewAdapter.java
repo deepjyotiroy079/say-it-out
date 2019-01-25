@@ -52,7 +52,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             super(itemView);
             article_name = itemView.findViewById(R.id.article_name);
             parent_layout = itemView.findViewById(R.id.parent_layout);
-
         }
     }
 }
