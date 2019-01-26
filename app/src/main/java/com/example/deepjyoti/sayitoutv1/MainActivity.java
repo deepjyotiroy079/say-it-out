@@ -20,7 +20,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String ARTICLE_URL = "http://192.168.43.47/SayitOutv1/includes/DbOperations.php";
+    private static final String ARTICLE_URL = "http://192.168.225.46/SayitOutv1/includes/DbOperations.php";
     private static final String TAG = "MainActivity";
 
     // creating array lists of the article name
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
                     for(int i=0;i<array.length();i++) {
                         JSONObject article = array.getJSONObject(i);
-                        articleList.add(new Article(article.getString("article_title")));
+                        articleList.add(new Article(article.getString("article_title"), article.getString("article_content")));
                     }
                     RecyclerViewAdapter adapter = new RecyclerViewAdapter(articleList, MainActivity.this);
                     recyclerView.setAdapter(adapter);

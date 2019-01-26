@@ -2,9 +2,11 @@ package com.example.deepjyoti.sayitoutv1;
 
 public class Article {
     private String article_title;
+    private String article_content;
 
-    public Article(String article_name) {
+    public Article(String article_name, String article_content) {
         this.article_title = article_name;
+        this.article_content = article_content;
     }
 
     public String getArticle_title() {
@@ -16,14 +18,14 @@ public class Article {
         this.article_title = article_title;
     }
 
-    /*public String getArticle_content() {
+    public String getArticle_content() {
         return article_content;
     }
     public void setArticle_content(String article_content) {
         this.article_content = article_content;
     }
 
-    public int getArticle_timestamp() {
+    /*public int getArticle_timestamp() {
         return article_timestamp;
     }
 

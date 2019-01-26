@@ -15,11 +15,12 @@
         android:gravity="center"
         android:padding="15dp"
         android:background="#bbdefb"
-        android:textColor="#0288d1"/>
+        android:textColor="#0288d1" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/article_content"
         android:text="Article_string"
         android:layout_marginTop="80dp"
         android:layout_marginLeft="15dp"

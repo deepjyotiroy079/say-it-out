@@ -36,8 +36,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         Log.d(TAG, "onBindViewHolder: called");
-        Article article = articleList.get(position);
+        final Article article = articleList.get(position);
         holder.article_name.setText(article.getArticle_title());
+
+        holder.parent_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, article.getArticle_title(), Snackbar.LENGTH_SHORT).setAction("Action", null).show();
+            }
+        });
     }
 
     @Override
