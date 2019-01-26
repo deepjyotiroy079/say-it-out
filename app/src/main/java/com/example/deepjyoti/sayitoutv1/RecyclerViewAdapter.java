@@ -1,6 +1,8 @@
 package com.example.deepjyoti.sayitoutv1;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
@@ -43,6 +45,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, article.getArticle_title(), Snackbar.LENGTH_SHORT).setAction("Action", null).show();
+                Intent intent = new Intent(context, ArticleActivity.class);
+                intent.putExtra("article_title", article.getArticle_title());
+                intent.putExtra("article_content", article.getArticle_content());
+                context.startActivity(intent);
             }
         });
     }
