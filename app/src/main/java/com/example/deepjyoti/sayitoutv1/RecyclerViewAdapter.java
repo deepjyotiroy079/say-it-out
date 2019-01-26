@@ -44,7 +44,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.parent_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, article.getArticle_title(), Snackbar.LENGTH_SHORT).setAction("Action", null).show();
+                // Snackbar.make(view, article.getArticle_title(), Snackbar.LENGTH_SHORT).setAction("Action", null).show();
                 Intent intent = new Intent(context, ArticleActivity.class);
                 intent.putExtra("article_title", article.getArticle_title());
                 intent.putExtra("article_content", article.getArticle_content());
