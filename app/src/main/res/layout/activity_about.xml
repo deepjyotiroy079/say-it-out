@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AboutActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="200dp"
+           android:layout_height="200dp"
+           android:id="@+id/profile_img"
+           android:layout_marginTop="40dp"
+           android:layout_centerHorizontal="true"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/myname"
+           android:textSize="32sp"
+           android:layout_marginTop="250dp"
+           android:layout_centerHorizontal="true"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/about_me"
+           android:textSize="18sp"
+           android:layout_marginTop="310dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_centerHorizontal="true"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/about_app_title"
+           android:textSize="32sp"
+           android:layout_marginTop="460dp"
+           android:layout_centerHorizontal="true"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/about_app"
+           android:textSize="18sp"
+           android:layout_marginTop="520dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_centerHorizontal="true"
+           android:paddingBottom="10dp"
+           />
+
+   </RelativeLayout>
+
+</ScrollView>

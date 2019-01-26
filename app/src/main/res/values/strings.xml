@@ -3,4 +3,11 @@
     <string name="say_it_out">Say It Out</string>
     <string name="menu_admin">Admin</string>
     <string name="menu_about">About</string>
+    <string name="about_me">I am a student pursuing a Bachelor\'s degree in Information Technology with a focus on Full Stack Development. I love to learn new technologies and to see how things work.</string>
+    <string name="myname">Deepjyoti Roy</string>
+    <string name="go_back_text">Go Back</string>
+    <string name="about_app">
+        A Hobby Project which I took few months back. I created a website that allowed the admin to post articles. This is simply the Mobile App version of the same project. This project allowed me to understand about APIs, Android Activities etc. I used Git/Github as version control for this project. It is still undone and I\'m hoping to finish it soon ;)
+    </string>
+    <string name="about_app_title">What is SayItOut</string>
 </resources>

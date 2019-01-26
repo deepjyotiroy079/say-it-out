@@ -1,5 +1,6 @@
 package com.example.deepjyoti.sayitoutv1;
 
+import android.content.Intent;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId()==R.id.about) {
-            Toast.makeText(this, "This is the about section", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, AboutActivity.class);
+            startActivity(intent);
         } else if(item.getItemId() == R.id.admin) {
             Toast.makeText(this, "This is the admin panel", Toast.LENGTH_SHORT).show();
         } else {
