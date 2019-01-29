@@ -44,7 +44,9 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
         } else if(item.getItemId() == R.id.admin) {
-            Toast.makeText(this, "This is the admin panel", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(this, "This is the admin panel", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
         } else {
             return super.onOptionsItemSelected(item);
         }

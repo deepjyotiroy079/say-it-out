@@ -10,4 +10,6 @@
         A Hobby Project which I took few months back. I created a website that allowed the admin to post articles. This is simply the Mobile App version of the same project. This project allowed me to understand about APIs, Android Activities etc. I used Git/Github as version control for this project. It is still undone and I\'m hoping to finish it soon ;)
     </string>
     <string name="about_app_title">What is SayItOut</string>
+    <string name="enter_username_hint">Enter Username</string>
+    <string name="enter_password_hint">Enter Password</string>
 </resources>
